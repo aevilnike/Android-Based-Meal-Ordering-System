@@ -31,6 +31,7 @@ The Android Based Workplace Meal Ordering System is an ideal solution for workpl
 Link for the complete documentation of [here](https://drive.google.com/file/d/19Av-SHNKTv4ApEftTcrAiXMw3mt1FB1v/view).
 
 ## :framed_picture: Screenshots <a id="screenshots"></a>
+<div align="center">
 
 |          Splash Screen           |
 | :--------------------------: |
@@ -47,3 +48,4 @@ Link for the complete documentation of [here](https://drive.google.com/file/d/19
 |             Admin Dashboard              |
 | :--------------------------------: |
 | <img src="https://github.com/aevilnike/Android-Based-Meal-Ordering-System/assets/171907883/e75115e1-7a31-4f4e-b7f3-32b271eb223b" alt="Admin Dashboard" width="200" height="400"> <img src="https://github.com/aevilnike/Android-Based-Meal-Ordering-System/assets/171907883/79e1ba07-df6b-4435-837d-982db5f08d1b" alt="Admin Registration" width="200" height="400"> |
+</div>
