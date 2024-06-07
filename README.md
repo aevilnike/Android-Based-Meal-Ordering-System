@@ -1,5 +1,3 @@
-![image](https://github.com/aevilnike/Android-Based-Meal-Ordering-System/assets/171907883/3ea7c16e-9dc7-48fd-859d-228ffc0b3fef)
-
 <div align="center">
   <h2>Android based Workplace Meal Ordering System</h2>
 </div>
