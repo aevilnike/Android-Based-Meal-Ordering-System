@@ -28,7 +28,7 @@ The Android Based Workplace Meal Ordering System is an ideal solution for workpl
 
 ## :book: Documentation <a id="documentation"></a>
 
-Link for the complete documentation of [here](https://drive.google.com/file/d/19Av-SHNKTv4ApEftTcrAiXMw3mt1FB1v/view).
+Link for the complete documentation [here](https://drive.google.com/file/d/19Av-SHNKTv4ApEftTcrAiXMw3mt1FB1v/view).
 
 ## :framed_picture: Screenshots <a id="screenshots"></a>
 <div align="center">
