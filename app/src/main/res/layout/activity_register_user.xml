@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activities.user.RegisterUserActivity"
+    android:padding="20dp">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_arrow_back_black"
+            android:layout_margin="5dp"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/formTitle"
+            android:text="USER REGISTRATION"
+            android:textSize="18sp"
+            android:paddingLeft="25dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/antic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/gpsBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_my_location_black"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:background="@null"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBlack"/>
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/profileIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        app:c_border="true"
+        app:c_border_color="@color/colorPrimary2"
+        app:c_border_width="1dp"
+        android:src="@drawable/baseline_person_grey"/>
+
+    <!-- Scrolls Other Views ... -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Employee ID*"
+                android:id="@+id/idcard"
+                android:background="@android:color/white"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_idcard"
+                    android:drawablePadding="8dp"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name*"
+                android:id="@+id/nameEt"
+                android:background="@android:color/white"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_person_grey"
+                    android:drawablePadding="8dp"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number*"
+                android:id="@+id/phoneEt"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_smartphone_24"
+                    android:drawablePadding="8dp"
+                    android:inputType="phone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--3 Column address-->
+            <LinearLayout
+                android:id="@+id/addressLl"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/phoneEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/countryEt"
+                    android:layout_below="@+id/nameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Country"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/baseline_place_grey"
+                    android:drawablePadding="5dp"
+                    android:layout_margin="5dp"
+                    android:inputType="textPostalAddress"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect02"/>
+                <EditText
+                    android:id="@+id/stateEt"
+                    android:layout_below="@+id/nameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/baseline_place_grey"
+                    android:drawablePadding="5dp"
+                    android:layout_margin="5dp"
+                    android:inputType="textPostalAddress"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect02"/>
+                <EditText
+                    android:id="@+id/cityEt"
+                    android:layout_below="@+id/nameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/baseline_place_grey"
+                    android:drawablePadding="5dp"
+                    android:layout_margin="5dp"
+                    android:inputType="textPostalAddress"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect02"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/addressEt"
+                android:layout_below="@+id/addressLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complete Address"
+                android:padding="10dp"
+                android:drawableStart="@drawable/baseline_place_grey"
+                android:drawablePadding="5dp"
+                android:layout_margin="5dp"
+                android:inputType="textPostalAddress|textMultiLine"
+                android:background="@drawable/shape_rect02"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email*"
+                android:id="@+id/emailEt"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_mail_grey"
+                    android:drawablePadding="8dp"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password* "
+                android:id="@+id/passEt"
+                app:passwordToggleEnabled="true"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_lock_grey"
+                    android:drawablePadding="8dp"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password*"
+                android:id="@+id/cpassEt"
+                app:passwordToggleEnabled="true"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_lock_grey"
+                    android:drawablePadding="8dp"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:backgroundTint="@color/colorBlack"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/registerSellerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="CLICK HERE TO SIGN UP SELLER"
+        android:textColor="@color/colorBlack"
+        android:elevation="0dp"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

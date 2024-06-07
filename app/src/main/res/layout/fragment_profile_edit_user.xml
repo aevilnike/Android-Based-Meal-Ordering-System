@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".activities.user.ProfileEditUserFragment">
+
+    <!--Profile Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        android:background="@color/colorPrimary2Dim">
+
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/baseline_person_grey"
+            app:c_border="true"
+            app:c_border_color="@color/colorPrimary2"
+            app:c_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE NAME"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-black"
+            android:layout_toRightOf="@+id/profileIv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/emp_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Id"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@+id/profileIv"
+            android:layout_below="@+id/full_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:id="@+id/gpsBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:src="@drawable/baseline_my_location_black" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimary2"/>
+    <!--Card Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="-25dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/colorPrimary2"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/orderCountTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif-black"
+                    android:includeFontPadding="false"
+                    android:text="Edit Profile"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_person_pinblack"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderCountTv"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:text="Update your profile information below to ensure we have the most accurate and up-to-date details about you."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!--Information-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/idcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileIv"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/baseline_person_grey"
+            android:drawablePadding="5dp"
+            android:hint="Employee ID"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idcard"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/baseline_person_grey"
+            android:drawablePadding="5dp"
+            android:hint="Full Name"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameEt"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/baseline_smartphone_24"
+            android:drawablePadding="5dp"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:id="@+id/addressLl"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/countryEt"
+                android:layout_below="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Country"
+                android:padding="10dp"
+                android:drawableStart="@drawable/baseline_place_grey"
+                android:drawablePadding="5dp"
+                android:layout_margin="5dp"
+                android:inputType="textPostalAddress"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rect02"/>
+            <EditText
+                android:id="@+id/stateEt"
+                android:layout_below="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:padding="10dp"
+                android:drawableStart="@drawable/baseline_place_grey"
+                android:drawablePadding="5dp"
+                android:layout_margin="5dp"
+                android:inputType="textPostalAddress"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rect02"/>
+            <EditText
+                android:id="@+id/cityEt"
+                android:layout_below="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:padding="10dp"
+                android:drawableStart="@drawable/baseline_place_grey"
+                android:drawablePadding="5dp"
+                android:layout_margin="5dp"
+                android:inputType="textPostalAddress"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rect02"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/addressEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressLl"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/baseline_place_grey"
+            android:drawablePadding="5dp"
+            android:hint="Complete Address"
+            android:inputType="textPostalAddress|textMultiLine"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            android:backgroundTint="@color/colorBlack"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

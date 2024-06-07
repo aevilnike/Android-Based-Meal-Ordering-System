@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardElevation="5dp"
+    app:contentPadding="10dp"
+    app:cardCornerRadius="20dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:id="@+id/profileLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/profileIv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/baseline_person_grey"
+                app:c_border="true"
+                app:c_border_color="@color/colorPrimary"
+                app:c_border_width="1dp"/>
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileLl"
+            android:text="dd/MM/yyyy"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/statusView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTv"
+            android:text="Status: "
+            android:textColor="@color/secondary_text"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTv"
+            android:layout_toEndOf="@+id/statusView"
+            android:text="Pending"
+            android:textColor="@color/secondary_text"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/acceptBtn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:layout_below="@+id/statusTv"
+            android:background="@drawable/shape_rectgreen"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/rejectBtn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:layout_below="@+id/statusTv"
+            android:background="@drawable/shape_rectreject"
+            android:paddingHorizontal="10dp"
+            android:layout_toEndOf="@+id/acceptBtn"
+            android:layout_marginLeft="10dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/amountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTv"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/secondary_text"
+            android:layout_alignParentEnd="true"
+            android:text="RM0.00"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

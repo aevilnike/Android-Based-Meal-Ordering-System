@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "704100292074",
+    "firebase_url": "https://protest-c1205-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "protest-c1205",
+    "storage_bucket": "protest-c1205.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704100292074:android:027031be453b7824448e93",
+        "android_client_info": {
+          "package_name": "com.example.foodorderingworkplace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcz5rqS5zzeFLhzuDMT4OMsCdT6DzMzjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704100292074:android:1a0649a737f58a62448e93",
+        "android_client_info": {
+          "package_name": "com.example.pro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcz5rqS5zzeFLhzuDMT4OMsCdT6DzMzjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
