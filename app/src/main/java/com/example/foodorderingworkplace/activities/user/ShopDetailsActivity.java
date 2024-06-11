@@ -465,7 +465,7 @@ public class ShopDetailsActivity extends AppCompatActivity implements PaymentRes
 
     private void paymentMethod(double amount, String name, String phone, String email, String myOrderId) {
         Checkout checkout = new Checkout();
-        checkout.setKeyID("rzp_test_24ZrYTpJDp156p");
+        checkout.setKeyID("");
         final Activity activity = ShopDetailsActivity.this;
 
         try {
